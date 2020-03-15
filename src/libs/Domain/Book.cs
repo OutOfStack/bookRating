@@ -1,6 +1,6 @@
 using System;
 
-namespace bookRating
+namespace Domain
 {
     public class Book
     {

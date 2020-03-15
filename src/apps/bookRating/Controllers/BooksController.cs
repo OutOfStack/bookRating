@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using BookRating.Models;
+using Domain;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace bookRating.Controllers
+namespace BookRating.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -18,10 +20,12 @@ namespace bookRating.Controllers
         };
 
         private readonly ILogger<BooksController> _logger;
+        private readonly BookRatingSettings _appSettings;
 
-        public BooksController(ILogger<BooksController> logger)
+        public BooksController(ILogger<BooksController> logger, BookRatingSettings appSettings)
         {
             _logger = logger;
+            _appSettings = appSettings;
         }
 
         [HttpGet]
