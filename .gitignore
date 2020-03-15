@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/bookRating
+/bookRating/bin/Debug/netcoreapp3.1
+/bookRating/obj
+/bookRating/bookRating.csproj.user
